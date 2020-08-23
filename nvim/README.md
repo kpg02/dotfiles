@@ -27,3 +27,4 @@
 |ñf|Formatea el archivo|normal|
 |ññ|Salir del modo visual|visual|
 |ñf|Formatea la selección|visual|
+|<leader>ci|Sobre un bloque de código seleccionado rota entre comentado y no comentado|visual|
