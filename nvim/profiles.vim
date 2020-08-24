@@ -9,7 +9,9 @@ colorscheme dracula
 set background=dark
 
 " === options
+set background=dark
 set cmdheight=2
+set cursorline
 set expandtab " Convierte el tab a espacios
 set hidden
 set incsearch " Muestra el siguiente match de la busqueda
@@ -19,6 +21,7 @@ set nojoinspaces " Evita que al hacer Join se pongan dos espacios
 set nostartofline
 set noswapfile " Evita .swp para el buffer
 set nowrap " Evita salto de línea para no salirse de la pantalla
+set nu
 set nowritebackup
 set relativenumber " Número relativo que cuente la línea, mantiene el 0 en la línea en la que este
 set ruler
@@ -30,6 +33,7 @@ set smartindent " Indentación 'inteligente'
 set splitbelow " Split horizontal hacia abajo
 set splitright " Split vertical a la derecha
 set tabstop=4 softtabstop=4 " Tab a 4 espacios
+set timeoutlen=500
 set updatetime=300
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.

@@ -2,15 +2,28 @@ let mapleader = " "
 let g:AutoPairsShortcutBackInsert = "çç"
 let g:AutoPairsShortcutToggle = "çt"
 let g:AutoPairsShortcutFastWrap = "çñ"
-
+let g:coc_snippet_next = 'ñ<tab>'
+" let g:coc_snippet_prev = 'ñp'
 
 inoremap <expr> q ((pumvisible())?("\<C-p>"):("q"))
 inoremap <expr> ññ pumvisible() ? "\<C-e>" : "\<esc>"
 
-inoremap <silent><expr> <TAB>
-            \ pumvisible() ? "\<C-n>" :
-            \ <SID>check_back_space() ? "\<TAB>" :
-            \ coc#refresh()
+inoremap <silent><expr> ñ<TAB>
+      \ pumvisible() ? coc#_select_confirm() :
+      \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+
+
+function! s:check_back_space() abort
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+inoremap <silent><expr> <Tab>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<Tab>" :
+      \ coc#refresh()
 
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 inoremap <silent><expr> <c-space> coc#refresh()

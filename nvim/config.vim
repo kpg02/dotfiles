@@ -12,21 +12,23 @@ let g:netrw_banner = 0
 let g:netrw_browser_split=2
 let g:netrw_winsize = 25
 let g:rainbow_active = 1
+let g:python_highlight_all = 1
 
 let g:coc_global_extensions = [
             \ 'coc-marketplace',
-            \ 'coc-jedi',
+            \ 'coc-python',
             \ 'coc-eslint',
             \ 'coc-emmet',
             \ 'coc-tsserver',
             \ 'coc-sh',
-            \ 'coc-python',
             \ 'coc-markdownlint',
             \ 'coc-json',
             \ 'coc-css',
             \ 'coc-prettier',
             \ 'coc-snippets',
             \ 'coc-stylelintplus',
+            \ 'coc-vimlsp',
+            \ 'coc-phpls',
             \ ]
 
 

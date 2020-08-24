@@ -18,6 +18,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'bling/vim-bufferline'
 Plug 'ryanoasis/vim-devicons'
+Plug 'airblade/vim-gitgutter'
 
 " Markdown & HTML
 Plug 'AndrewRadev/tagalong.vim' " Rename both tags
@@ -25,3 +26,5 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 
 " Autocomplete & Syntax
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'vim-python/python-syntax'
+Plug 'honza/vim-snippets'
