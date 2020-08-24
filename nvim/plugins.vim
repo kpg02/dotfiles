@@ -26,5 +26,6 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 
 " Autocomplete & Syntax
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'luochen1990/rainbow'
 Plug 'vim-python/python-syntax'
 Plug 'honza/vim-snippets'

@@ -13,6 +13,7 @@ let g:netrw_browser_split=2
 let g:netrw_winsize = 25
 let g:rainbow_active = 1
 let g:python_highlight_all = 1
+let g:rainbow_active = 1 
 
 let g:coc_global_extensions = [
             \ 'coc-marketplace',
