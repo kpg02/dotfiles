@@ -27,14 +27,6 @@ catch
 endtry
 
 
-" === Functions Setup ===
-
-try
-    source ~/.config/nvim/functions.vim
-catch
-endtry
-
-
 " === Keymaps Setup ===
 
 try

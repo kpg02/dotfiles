@@ -3,17 +3,15 @@ let g:AutoPairsShortcutBackInsert = "çç"
 let g:AutoPairsShortcutToggle = "çt"
 let g:AutoPairsShortcutFastWrap = "çñ"
 let g:coc_snippet_next = 'ñ<tab>'
-" let g:coc_snippet_prev = 'ñp'
 
-inoremap <expr> q ((pumvisible())?("\<C-p>"):("q"))
-inoremap <expr> ññ pumvisible() ? "\<C-e>" : "\<esc>"
+inoremap <expr> Ñ pumvisible() ? "\<C-e>" : "\<esc>"
+
 
 inoremap <silent><expr> ñ<TAB>
-      \ pumvisible() ? coc#_select_confirm() :
-      \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-
+            \ pumvisible() ? coc#_select_confirm() :
+            \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
+            \ <SID>check_back_space() ? "\<TAB>" :
+            \ coc#refresh()
 
 function! s:check_back_space() abort
     let col = col('.') - 1
@@ -21,9 +19,9 @@ function! s:check_back_space() abort
 endfunction
 
 inoremap <silent><expr> <Tab>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<Tab>" :
-      \ coc#refresh()
+            \ pumvisible() ? "\<C-n>" :
+            \ <SID>check_back_space() ? "\<Tab>" :
+            \ coc#refresh()
 
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 inoremap <silent><expr> <c-space> coc#refresh()
@@ -36,6 +34,8 @@ endif
 
 
 nnoremap <S-Tab> gT
+nnoremap <C-p> :Files<CR>
+nnoremap <leader>b :Buffers<CR>
 nnoremap <Tab> gt
 nnoremap <silent> gd <Plug>(coc-definition)
 nnoremap <silent> gi <Plug>(coc-implementation)
@@ -56,3 +56,17 @@ nnoremap ñç %
 
 vnoremap ñf <Plug>(coc-format-selected)
 vnoremap ññ <ESC>
+
+
+
+
+
+
+tnoremap <C-h> <C-\><C-n><C-w>h
+tnoremap <C-j> <C-\><C-n><C-w>j
+tnoremap <C-k> <C-\><C-n><C-w>k
+tnoremap <C-l> <C-\><C-n><C-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l

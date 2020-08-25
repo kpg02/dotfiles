@@ -17,9 +17,6 @@
     "less.validate": false,
     "scss.validate": false,
     "wxss.validate": false,
-    "python.linting.enabled":true,
-    "python.linting.flake8Enabled":true,
-    "python.autoComplete.addBrackets": true,
     "snippets.ultisnips.enable": true,
 
 

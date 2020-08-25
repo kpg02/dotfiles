@@ -7,12 +7,13 @@
 |Tecla|Función|Modo|
 |--|--|--|
 |çç|Vuelve a la posición anterior del cursor de donde salto debido al modo Fly del auto pairs y cierra la pareja | insertar|
-|ññ|Cierra el autocompletar si está abierto o sale del modo insertar|insertar|
+|Ñ|Cierra el autocompletar si está abierto o sale del modo insertar|insertar|
 |\<Tab>|Baja cuando el autocompletar está activo|insertar|
 |çç|AutoPairs, vuelve hacia atrás e inserta el cierre de la pareja|insertar|
 |çt|Toggle de AutoPairs|insertar|
 |çñ|FastWrap AutoPairs, mete la siguiente palabra dentro de la pareja actual|insertar|
 |ñ\<tab>|Siguient snippet de CoC|insertar|
+|gf|Va a la definición de la función en node|normal|
 |ñi|Indentar todo el archivo|normal|
 |ña|Quitar la zona seleccionada por la busqueda|normal|
 |ñt|Abre o cierra NERDTree |normal|
