@@ -1,33 +1,8 @@
 {
-    "prettier.tabWidth":4,
-    "prettier.requireConfig":true,
-    "coc.preferences.formatOnSaveFiletypes": [
-        "css",
-        "markdown",
-        "Markdown",
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact"
-    ],
-
-
-    "json.enable":true,
+    "diagnostic.displayByAle": true,
+    "html.autoClosingTags": true,
     "css.validate": false,
     "less.validate": false,
     "scss.validate": false,
-    "wxss.validate": false,
-    "snippets.ultisnips.enable": true,
-
-
-
-
-    "languageserver": {
-
-        "sql": {
-            "command": "sql-language-server",
-            "args" : ["up", "--method", "stdio"],
-            "filetypes": ["sql", "mysql"]
-        }
-    }
+    "wxss.validate": false
 }
