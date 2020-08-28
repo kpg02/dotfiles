@@ -213,8 +213,6 @@ nmap <silent> gr <Plug>(coc-references)
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
-nnoremap <leader>gd :CocDiagnostics<CR>
-
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
@@ -269,6 +267,7 @@ let g:coc_snippet_next = 'ñ<tab>'
 " ALE
 nnoremap <silent> gk :ALEPreviousWrap<cr>
 nnoremap <silent> gj :ALENextWrap<cr>
+nnoremap <silent> <leader>gg :ALEDetail<cr>
 let g:ale_set_highlights = 1
 let g:ale_set_loclist = 0
 let g:ale_set_quickfix = 1

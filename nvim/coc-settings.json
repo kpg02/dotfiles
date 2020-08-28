@@ -1,4 +1,5 @@
 {
+    "jedi.executable.command": "jedi-language-server",
     "diagnostic.displayByAle": true,
     "html.autoClosingTags": true,
     "css.validate": false,
