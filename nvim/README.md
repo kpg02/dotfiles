@@ -44,4 +44,3 @@
 | \<C-k>       | Cambia al buffer de arriba                                                                                         | normal/terminal |
 | \<C-l>       | Cambia al buffer de derecha                                                                                        | normal/terminal |
 | \<leader> ff | Formatea el archivo entero o la selección                                                                          | normal/visual   |
-| ------------ | ------------------------------------------------------------------------------------------------------------------ | --------------- |
