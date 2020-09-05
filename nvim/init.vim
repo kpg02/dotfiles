@@ -277,7 +277,6 @@ let g:ale_sign_column_always = 1
 let g:ale_fixers={
             \'javascript':['prettier', 'eslint'],
             \'css':['prettier'],
-            \'html':['prettier'],
             \'scss':['prettier'],
             \'markdown':['prettier'],
             \'json':['fixjson'],
@@ -288,7 +287,6 @@ let g:ale_linters={
             \'javascript': ['tsserver'],
             \'bash': ['language-server'],
             \'css': ['csslint'],
-            \'html': ['tidy'],
             \'vim': ['vimls'],
             \'xml': ['xmllint'],
             \'scss': ['stylelint'],
@@ -298,3 +296,7 @@ let g:ale_linters={
             \'markdown': ['markdownlint'],
             \'python': ['flake8']
             \}
+
+
+autocmd FileType html set syntax=htmldjango
+autocmd FileType javascript set foldmethod=syntax

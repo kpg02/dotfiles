@@ -1,4 +1,7 @@
 {
+    "emmet.includeLanguages": {
+        "jinja2": "html"
+    },
     "jedi.executable.command": "jedi-language-server",
     "diagnostic.displayByAle": true,
     "html.autoClosingTags": true,
