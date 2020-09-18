@@ -66,6 +66,7 @@ syntax on
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'airblade/vim-gitgutter' " Muestra símbolo de git de cambiado, añadido o borrado
+Plug 'Shadowsith/vim-minify' " Minify para css y js
 Plug 'bling/vim-bufferline' " Buffers en la status bar de airline
 Plug 'sainnhe/sonokai' " ColorScheme
 Plug 'vim-airline/vim-airline' " Status bar
@@ -280,7 +281,7 @@ let g:ale_fixers={
             \'scss':['prettier'],
             \'markdown':['prettier'],
             \'json':['fixjson'],
-            \'python':['yapf', 'autopep8', 'reorder_python_imports']
+            \'python':['yapf', 'autopep8', 'isort']
             \}
 let g:ale_fix_on_save = 1
 let g:ale_linters={
