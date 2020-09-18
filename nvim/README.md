@@ -20,6 +20,10 @@
 | \<TAB>       | Mueve hacia abajo la selección del autocompletar                                                                   | insertar        |
 | ñ\<TAB>      | Va al siguiente snippet o a la próxima posición del cursor en el snippet                                           | insertar        |
 | K            | Muestra la documentación sobre el símbolo en el que está                                                           | normal          |
+| ;            | Abre la lista de archivos abiertos                                                                                 | normal          |
+| \<leader>t   | FZF para el proyecto                                                                                               | normal          |
+| \<leader>g   | Resultados de ripgrep para el patrón que pase                                                                      | normal          |
+| \<leader>j   | Resultados de ripgrep para la palabra bajo el cursor                                                               | normal          |
 | \<C-p>       | Abre :Files de fzf para buscar archivos                                                                            | normal          |
 | \<leader> fi | Cambia los tabs por espacios (según mi configuración) con :retab!                                                  | normal          |
 | \<leader> gg | Abre el diagnosis de ALE                                                                                           | normal          |
@@ -37,8 +41,8 @@
 | ñi           | Indenta correctamente todo el archivo                                                                              | normal          |
 | ñt           | Toggle de NERDTree                                                                                                 | normal          |
 | ññ           | Salta al siguiente par como si fuera % con el plugin matchup                                                       | normal          |
-| ´´           | Toggle de plugin AutoPairs                                                                                         | normal/insertar |
-| ´ñ           | Vuelve a la posición anterior del cursor e inserta el cierre de la pareja (deshace el efecto FlyMode de AutoPairs) | normal/insertar |
+| ñp           | Toggle de plugin AutoPairs                                                                                         | normal/insertar |
+| ñ-           | Vuelve a la posición anterior del cursor e inserta el cierre de la pareja (deshace el efecto FlyMode de AutoPairs) | normal/insertar |
 | \<C-h>       | Cambia al buffer de la izquierda                                                                                   | normal/terminal |
 | \<C-j>       | Cambia al buffer de abajo                                                                                          | normal/terminal |
 | \<C-k>       | Cambia al buffer de arriba                                                                                         | normal/terminal |
