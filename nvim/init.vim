@@ -66,7 +66,6 @@ syntax on
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'airblade/vim-gitgutter' " Muestra símbolo de git de cambiado, añadido o borrado
-Plug 'Shadowsith/vim-minify' " Minify para css y js
 Plug 'bling/vim-bufferline' " Buffers en la status bar de airline
 Plug 'sainnhe/sonokai' " ColorScheme
 Plug 'vim-airline/vim-airline' " Status bar
@@ -93,6 +92,7 @@ Plug 'Vimjas/vim-python-pep8-indent' " Mejora la indentación para seguir el pep
 Plug 'honza/vim-snippets' " Añade snippets para coc-snippets
 Plug 'yuezk/vim-js' " Añade syntax highlighting para JS (bueno)
 Plug 'dense-analysis/ale' " Añade linting
+Plug 'ap/vim-css-color' " Muestra el color css
 " Plug 'moll/vim-node' " Añade gf para ir al archivo del módulo de nodejs
 
 call plug#end()
