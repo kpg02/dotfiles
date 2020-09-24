@@ -380,7 +380,7 @@ endtry
 "   <leader>t - Browse list of files in current directory
 "   <leader>g - Search current directory for occurences of given term and close window if no results
 "   <leader>j - Search current directory for occurences of word under cursor
-nmap <silent>; :D nite buffer<CR>
+nmap <silent>; :Denite buffer<CR>
 nmap <silent><leader>t :DeniteProjectDir file/rec<CR>
 nnoremap <silent><leader>g :<C-u>Denite grep:. -no-empty<CR>
 nnoremap <silent><leader>j :<C-u>DeniteCursorWord grep:.<CR>
