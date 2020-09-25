@@ -1,3 +1,16 @@
+if [[ $1 == -push ]]; then
+	if [[ $(pwd) == /Users/$USER/.dotfiles ]]; then
+		git remote remove origin
+		git remote add origin git@github.com:kpg02/dotfiles.git
+		git push origin master
+	else
+		echo No estás en .dotfiles
+	fi
+
+	exit 0
+fi
+
+
 if [[ $1 == -update ]]; then
 	git pull
 
