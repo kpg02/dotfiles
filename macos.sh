@@ -58,6 +58,14 @@ if [[ $1 == -ssh ]]; then
 	exit 0
 fi
 
+
+if [[ $1 == -alias ]]; then
+	git config --global alias.s "status -s -b"
+	git config --global alias.lg "log --oneline --decorate --all --graph"
+	git config --global core.pager cat
+	exit 0
+fi
+
 if [ -d "$(xcode-select -p 2>/dev/null)" ]; then
 	if [[ $(pwd) == /Users/$USER/.dotfiles ]]; then
 		echo Estás ejecutando esto en la carpeta equivocada
@@ -100,6 +108,9 @@ if [ -d "$(xcode-select -p 2>/dev/null)" ]; then
 	read email
 	git config --global user.name "$nombre"	
 	git config --global user.email "$email"	
+	git config --global alias.s "status -s -b"
+	git config --global alias.lg "log --oneline --decorate --all --graph"
+	git config --global core.pager cat
 
 	export EDITOR=nvim
 	if [[ ! -d ~/.oh-my-zsh ]]; then
