@@ -77,10 +77,10 @@ function full_macos() {
 
         # Check if brew is installed and do it if it isn't, else update it
         if [[ $(command -v brew) == "" ]]; then
-            echo "Instalando Homebrew"
+            echo "\nInstalando Homebrew"
             /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
         else
-            echo "Actualizando Homebrew"
+            echo "\nActualizando Homebrew"
             brew update
             brew upgrade
         fi
@@ -144,6 +144,14 @@ case $ARG1 in
         else
             echo "\nSal de ~/.dotfiles para clonar"
             echo "No se completó el clonado"
+        fi
+        exit 0
+        ;;
+    -n|--new)
+        if [[ $(pwd) == $HOME/.dotfiles ]]; then
+            mkdir -p $HOME/.dotfilestemp
+            cp $HOME/.dotfiles/autoinstall.sh $HOME/.dotfilestemp/autoinstall.sh
+            cd $HOME/.dotfilestemp
         fi
         exit 0
         ;;
