@@ -1,1 +1,1 @@
-wget -O - https://github.com/kpg02/dotfiles/blob/master/autoinstall.sh | sh
+mkdir -p ~/.dotfilestemp && cd ~/.dotfilestemp && curl -O https://raw.githubusercontent.com/kpg02/dotfiles/master/autoinstall.sh && sh autoinstall.sh

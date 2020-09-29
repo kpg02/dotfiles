@@ -191,6 +191,9 @@ function main() {
     else
         echo "Aún no está hecho el script para este SO"
     fi
+    if [[ $(pwd) == $HOME/.dotfilestemp ]]; then
+        rm -rf $HOME/.dotfilestemp
+    fi
 }
 
 main
