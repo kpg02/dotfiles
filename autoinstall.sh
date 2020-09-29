@@ -89,7 +89,7 @@ function full_macos() {
         sudo xcodebuild -license accept
 
         # Install needed programs
-        brew install python3 gpg nvim nodejs git wget checkstyle lua tree
+        brew install ripgrep python3 gpg nvim nodejs git wget checkstyle lua tree
 
         # Upgrade pip3 and install needed modules
         sudo pip3 install --upgrade pip
