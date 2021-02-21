@@ -7,11 +7,11 @@
 install() {
     sudo apt update
     sudo apt-get -y install ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip python3-pip python3 git
-    sudo pip3 install pynvim
+    sudo pip3 install setuptools pynvim
     mkdir -p ~/clone/
     if [ -d "~/clone/nvim/" ]; then rm -rf "~/clone/nvim/"; fi
     git clone https://github.com/neovim/neovim ~/clone/nvim
-    cd git clone https://github.com/neovim/neovim ~/clone/nvim
+    cd ~/clone/nvim
     make CMAKE_BUILD_TYPE=RelWithDebInfo && sudo make install && return 0
     return 1
 }
@@ -23,7 +23,7 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     else
         echo "Fallo en la instalación"
     fi  
-else if [[ "$OSTYPE" == "darwin"* ]]; then
+elif  [[ "$OSTYPE" == "darwin"* ]]; then
     echo "No está implementado aún"
     exit 0
 fi
